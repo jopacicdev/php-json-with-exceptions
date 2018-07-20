@@ -12,12 +12,12 @@ class JsonDecodeTest extends \PHPUnit_Framework_TestCase
         $expected = array(
             'hello' => 'there'
         );
-        
+
         $sampleJson = '{"hello":"there"}';
 
         /** @noinspection PhpUnhandledExceptionInspection */
         $actual = \Josip\Json\json_decode($sampleJson, true);
-        
+
         $this->assertEquals($expected, $actual);
     }
 

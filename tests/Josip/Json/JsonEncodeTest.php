@@ -12,12 +12,12 @@ class JsonEncodeTest extends \PHPUnit_Framework_TestCase
         $sampleArray = array(
             'hello' => 'there'
         );
-        
+
         $expected = '{"hello":"there"}';
 
         /** @noinspection PhpUnhandledExceptionInspection */
         $result = \Josip\Json\json_encode($sampleArray);
-        
+
         $this->assertEquals($expected, $result);
     }
 
